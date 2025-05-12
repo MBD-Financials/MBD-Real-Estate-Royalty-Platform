@@ -1,0 +1,63 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #0e0b12;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.sidebar-link {
+  @apply flex items-center gap-3 py-3 px-4 rounded-lg transition-all duration-200 hover:bg-gray-800/50;
+}
+
+.sidebar-link.active {
+  @apply bg-gray-800/50;
+}
+
+.sidebar-icon {
+  @apply text-gray-400;
+}
+
+.gradient-btn {
+  @apply bg-gradient-to-r from-teal-400 to-indigo-500 hover:from-teal-500 hover:to-indigo-600 text-white py-2 px-4 rounded-lg transition-all duration-300 font-medium;
+}
+
+.card {
+  @apply bg-gray-900/80 rounded-xl p-5 border border-gray-800 backdrop-blur-sm;
+}
+
+.input-field {
+  @apply bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-2 text-white w-full focus:outline-none focus:ring-1 focus:ring-teal-400;
+}
+
+.table-container {
+  @apply overflow-x-auto;
+}
+
+.custom-table {
+  @apply min-w-full divide-y divide-gray-700;
+}
+
+.custom-table th {
+  @apply px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider;
+}
+
+.custom-table td {
+  @apply px-6 py-4 whitespace-nowrap text-sm;
+}
