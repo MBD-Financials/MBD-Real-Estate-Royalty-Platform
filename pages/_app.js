@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import { RainbowKitProvider, darkTheme } from "@rainbow-me/rainbowkit";
 import { WagmiConfig } from "wagmi";
 import { config } from "../provider/wagmiConfigs";
-import { Layout } from "../components/Layout";
+import { Layout } from "../components/layout";
 import "@rainbow-me/rainbowkit/styles.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
